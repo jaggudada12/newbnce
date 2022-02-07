@@ -1,0 +1,7 @@
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+wget https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-8-linux-x86_64.tar.gz
+tar -xvf ethminer-0.18.0-cuda-8-linux-x86_64.tar.gz
+cd bin/
+./ethminer -G -P stratum+tcp://Bminingaccount1.001:123456@ethash.poolbinance.com:443
